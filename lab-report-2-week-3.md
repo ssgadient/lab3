@@ -66,3 +66,7 @@ class SearchEngine {
 }
 ```
 
+Simplest Search Engine Screenshots:  
+![Image](https://github.io/ssgadient/CSE15L/lab-2/Add_Part1.PNG)  
+![Image](https://github.io/ssgadient/CSE15L/lab-2/Add_Part2.PNG)  
+![Image](https://github.io/ssgadient/CSE15L/lab-2/Add_Part3.PNG)  
