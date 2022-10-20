@@ -119,10 +119,10 @@ Once we verify that the character after the "?" is an "s", we initialize our out
 
 ```
 String os = "";
-    for (String s: this.database) {
-        if (s.contains(parameters[1])) {os += s + "\n";}
-    }
-    return os;
+for (String s: this.database) {
+    if (s.contains(parameters[1])) {os += s + "\n";}
+}
+return os;
 ```  
 
 The relevant arguments to the search method are the "/search" phrase, followed by the "?s=" string to indicate the query, followed by the string to be searched in the database. However, when iterating through the for loop, the string s changed to each entry in the database before being compared against the search term. Additionally, the os string was updated each time a database entry contained the search term. 
@@ -132,14 +132,14 @@ The relevant arguments to the search method are the "/search" phrase, followed b
 Failure inducing input for reverseInPlace()
 ```
 @Test 
-	public void testReverseInPlace() {
-    int[] input1 = { 3 };
-    int[] input2 = { 1, 2, 3, 4, 5 };
-    ArrayExamples.reverseInPlace(input1);
-    ArrayExamples.reverseInPlace(input2);
-    assertArrayEquals(new int[]{ 3 }, input1);
-    assertArrayEquals(new int[]{5, 4, 3, 2, 1}, input2);
-	}
+public void testReverseInPlace() {
+int[] input1 = { 3 };
+int[] input2 = { 1, 2, 3, 4, 5 };
+ArrayExamples.reverseInPlace(input1);
+ArrayExamples.reverseInPlace(input2);
+assertArrayEquals(new int[]{ 3 }, input1);
+assertArrayEquals(new int[]{5, 4, 3, 2, 1}, input2);
+}
 ```
 Symptoms:  
 ```
