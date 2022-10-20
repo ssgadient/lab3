@@ -109,7 +109,7 @@ Instead of going into the else if clause for /add, we go into the else clause, w
 ```
 else {
     System.out.println("Path: " + url.getPath());
-    if (url.getPath().contains("/search"))
+    if (url.getPath().contains("/search")) { ... }
 ```
 Once again, we split the string around the equal sign to separate the "s" string from the string to be searched. 
 
